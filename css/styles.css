@@ -1,0 +1,125 @@
+@font-face {
+    font-family: Futura;
+    src: url(./../fonts/FuturaCyrillicBook.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --page-background: #f4f4f4;
+  --second-background: #ffffff;
+  --third-family: 'Fredoka', sans-serif;
+  --black: #0f0101;
+  --gray: #c4c4c4;
+  --second-black: #150101;
+  --white: #ffffff;
+  --pink: #f2ceda;
+  --pink-second: #d23166;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Стили Шапка*/
+.page {
+  background-color: var(--page-background);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 79px;
+  background-color: var(--second-background);
+}
+
+.header-logo {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-block {
+  height: 42px;
+  padding-left: 8px;
+  margin-top: -11px;
+}
+
+.header-exit {
+  margin-right: 30px;
+}
+
+/*Стили Основной контент*/
+.aside {
+  background-color: var(--second-background);
+}
+.aside-menu-list-item {
+  padding: 15px;
+}
+
+.aside-menu-list-link {
+  display: flex;
+  flex-direction: row;
+}
+
+.aside-menu-list-item-text {
+  margin-left: 16px;
+}
+
+/*Стили Подвал*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: var(--second-background);
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 30px;
+  margin-left: auto;
+}
+
+.footer-link-text {
+  color: #ff6600;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  font-weight: 400;
+  margin-left: 7px;
+}
+
+.footer-block-text {
+  color: #a5a5a5;
+  font-size: 0.75rem;
+  font-family: var(--font-family);
+}
+
+.footer-block-text.text2 {
+  margin-left: 30px;
+}
