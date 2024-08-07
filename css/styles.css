@@ -1,8 +1,8 @@
 @font-face {
-    font-family: Futura;
-    src: url(./../fonts/FuturaCyrillicBook.ttf) format("truetype");
-    font-weight: 400;
-    font-style: normal;
+  font-family: Futura;
+  src: url(./../fonts/FuturaCyrillicBook.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
 * {
@@ -13,16 +13,11 @@
 
 :root {
   --font-family: 'Montserrat', sans-serif;
+  --secondary-font-family: 'Futura', sans-serif;
   --page-background: #f4f4f4;
   --second-background: #ffffff;
-  --third-family: 'Fredoka', sans-serif;
-  --black: #0f0101;
-  --gray: #c4c4c4;
-  --second-black: #150101;
-  --white: #ffffff;
-  --pink: #f2ceda;
-  --pink-second: #d23166;
-  scroll-behavior: smooth;
+  --three-background: #172139;
+  --second-color: #ff6600;
 }
 
 ul {
@@ -64,11 +59,18 @@ a {
 }
 
 /*Стили Основной контент*/
+.main {
+  padding-top: 30px;
+  height: calc(100vh - 160px);
+}
+
 .aside {
   background-color: var(--second-background);
+  width: 290px;
 }
 .aside-menu-list-item {
   padding: 15px;
+  border-bottom: 1px solid #f4f4f4;
 }
 
 .aside-menu-list-link {
@@ -78,6 +80,33 @@ a {
 
 .aside-menu-list-item-text {
   margin-left: 16px;
+  font-family: var(--secondary-font-family);
+  font-size: 1.0625rem;
+}
+
+.aside-close-memu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aside-close-memu-text {
+  margin-left: 15px;
+  font-family: var(--secondary-font-family);
+  font-size: 1.0625rem;
+  color: var(--second-color);
+}
+
+.aside-menu-list-item:hover {
+  background-color: var(--three-background);
+}
+
+.aside-menu-list-link:activ {
+  background-color: var(--three-background);
+}
+
+.aside-menu-list-item:hover > a {
+  color: var(--page-background);
 }
 
 /*Стили Подвал*/
@@ -107,7 +136,7 @@ a {
 }
 
 .footer-link-text {
-  color: #ff6600;
+  color: var(--second-color);
   font-size: 1rem;
   font-family: var(--font-family);
   font-weight: 400;
