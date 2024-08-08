@@ -27,7 +27,7 @@
 		<!--Конец блока Шапка-->
 
 		<!--Блок Основной контент-->
-		<main class="main">
+		<div class="main">
 			<aside class="aside">
 				<ul class="aside-menu-list">
 					<li class="aside-menu-list-item">
@@ -60,7 +60,7 @@
 							<p class="aside-menu-list-item-text">Локации</p>
 						</a>
 					</li>
-					<li class="aside-menu-list-item">
+					<li class="aside-menu-list-item active">
 						<a href="./settings.html" class="aside-menu-list-link">
 							<img src="./images/gear_wheel_orange.svg" alt="Настройки" class="aside-menu-list-item-img">
 							<p class="aside-menu-list-item-text">Настройки</p>
@@ -74,14 +74,250 @@
 				</div>
 			</aside>
 
-		</main>
+			<main class="settings-content">
+				<h1 class="title">Настройки/Локации</h1>
+				<ul class="set-menu-list">
+					<li class="set-menu-list-item">
+						<a href="#" class="set-menu-list-item-link">Имущество</a>
+					</li>
+					<li class="set-menu-list-item">
+						<a href="#" class="set-menu-list-item-link">Сотрудники</a>
+					</li>
+					<li class="set-menu-list-item">
+						<a href="#" class="set-menu-list-item-link">Инвентаризация</a>
+					</li>
+					<li class="set-menu-list-item active">
+						<a href="#" class="set-menu-list-item-link">Локации</a>
+					</li>
+					<li class="set-menu-list-item">
+						<a href="#" class="set-menu-list-item-link">Уведомления</a>
+					</li>
+					<li class="set-menu-list-item">
+						<a href="#" class="set-menu-list-item-link">Справочники</a>
+					</li>
+					<li class="set-menu-list-item">
+						<a href="#" class="set-menu-list-item-link">Пользователь</a>
+					</li>
+				</ul>
+
+				<section class="table">
+					<h2 class="table-title">Настройка полей таблицы</h2>
+					<div class="table-header">
+						<table>
+							<thead>
+								<tr>
+									<th class="table-name"></th>
+									<th class="table-desc">Описание</th>
+									<th class="table-sort">Сортировка</th>
+									<th class="table-id">ID</th>
+									<th class="table-type">Тип поля</th>
+									<th class="table-print">Выводить в таблицу</th>
+									<th class="table-reqired">Обязательно</th>
+									<th class="table-delete">Удалить</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="table-name"><img src="./images/dots.svg" alt="">
+										<p>Название</p>
+										<button><img src="./images/pen.svg" alt="Редактировать"></button>
+									</td>
+									<td><img src="./images/help-circle.svg" alt=""></td>
+									<td class="table-sort"><span class="table-sort-text">500</span></td>
+									<td>1001</td>
+									<td>Строка</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy"class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td></td>
+
+								</tr>
+								<tr>
+									<td class="table-name"><img src="./images/dots.svg" alt="">
+										<p>Цена</p>
+										<button><img src="./images/pen.svg" alt="Редактировать"></button>
+									</td>
+									<td></td>
+									<td class="table-sort"><span class="table-sort-text">510</span></td>
+									<td>1002</td>
+									<td>Число</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+
+								</tr>
+								<tr>
+									<td class="table-name"><img src="./images/dots.svg" alt="">
+										<p>МОЛ</p>
+										<button><img src="./images/pen.svg" alt="Редактировать"></button>
+									</td>
+									<td></td>
+									<td class="table-sort"><span class="table-sort-text">520</span></td>
+									<td>1003</td>
+									<td class="table-types">Справочник <img src="./images/file.svg" alt=""></td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox">
+										<label for="happy"></label>
+									</td>
+
+								</tr>
+								<tr>
+									<td class="table-name"><img src="./images/dots.svg" alt="">
+										<p>Фото</p>
+										<button><img src="./images/pen.svg" alt="Редактировать"></button>
+									</td>
+									<td></td>
+									<td class="table-sort"><span class="table-sort-text">530</span></td>
+									<td>1004</td>
+									<td>Файл</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox">
+										<label for="happy"></label>
+									</td>
+
+								</tr>
+								<tr>
+									<td class="table-name"><img src="./images/dots.svg" alt="">
+										<p>Цвет</p>
+										<button><img src="./images/pen.svg" alt="Редактировать"></button>
+									</td>
+									<td></td>
+									<td class="table-sort"><span class="table-sort-text">540</span></td>
+									<td>1005</td>
+									<td>Строка</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox">
+										<label for="happy"></label>
+									</td>
+
+								</tr>
+								<tr>
+									<td class="table-name"><img src="./images/dots.svg" alt="">
+										<p>Локация</p>
+										<button><img src="./images/pen.svg" alt="Редактировать"></button>
+									</td>
+									<td></td>
+									<td class="table-sort"><span class="table-sort-text">550</span></td>
+									<td>1006</td>
+									<td class="table-types">Справочник <img src="./images/file.svg" alt=""></td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox">
+										<label for="happy"></label>
+									</td>
+
+								</tr>
+								<tr>
+									<td class="table-name"><img src="./images/dots.svg" alt="">
+										<p>Количество</p>
+										<button><img src="./images/pen.svg" alt="Редактировать"></button>
+									</td>
+									<td></td>
+									<td class="table-sort"><span class="table-sort-text">560</span></td>
+									<td>1007</td>
+									<td>Число</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox">
+										<label for="happy"></label>
+									</td>
+
+								</tr>
+								<tr>
+									<td class="table-name"><img src="./images/dots.svg" alt="">
+										<p>Описание</p>
+										<button><img src="./images/pen.svg" alt="Редактировать"></button>
+									</td>
+									<td></td>
+									<td class="table-sort"><span class="table-sort-text">570</span></td>
+									<td>1008</td>
+									<td>Текст</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox">
+										<label for="happy"></label>
+									</td>
+
+								</tr>
+								<tr>
+									<td class="table-name"><img src="./images/dots.svg" alt="">
+										<p>Количество</p>
+										<button><img src="./images/pen.svg" alt="Редактировать"></button>
+									</td>
+									<td></td>
+									<td class="table-sort"><span class="table-sort-text">580</span></td>
+									<td>1009</td>
+									<td>Число</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox" checked>
+										<label for="happy"></label>
+									</td>
+									<td><input type="checkbox" name="happy" id="happy" class="checkbox">
+										<label for="happy"></label>
+									</td>
+
+								</tr>
+
+							</tbody>
+						</table>
+
+					</div>
+
+					<button class="table-btn">
+						<img src="./images/plus_whait.svg" alt="Добавить" class="table-btn-plus">
+						<span class="table-btn-text">Добавить поле</span>
+					</button>
+				</section>
+
+			</main>
+
+		</div>
 		<!--Конец блока Основной контент-->
 
 		<!--Блок Подвал-->
 		<footer class="footer">
-			<div class="footer-block">
-				<p class="footer-block-text text1">Последний приём 20.09.2021 18:36:21</p>
-				<p class="footer-block-text text2">Последняя передача 20.09.2021 18:38:21</p>
+			<div class="footer-btns">
+				<button class="footer-btn-save"> <img src="./images/save.svg" alt="Сохранить"
+						class="footer-btn-save-img"> <span class="footer-btn-save-text">Сохранить</span></button>
+				<button class="footer-btn-cancel"><span class="footer-btn-cancel-text"></span>Отменить</button>
 			</div>
 			<div class="footer-link">
 				<img src="./images/docum.svg" alt="Документация" class="footer-link-image">
