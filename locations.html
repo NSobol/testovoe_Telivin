@@ -76,6 +76,7 @@
 			<main class="page-content">
 				<h1 class="title">Локации / Все локации</h1>
 				<button class="create-popap">Создать локацию</button>
+				<button class="edit-popap">Редактировать локацию</button>
 			</main>
 		</div>
 		<!--Конец блока Основной контент-->
@@ -93,11 +94,23 @@
 		</footer>
 		<!--Конец блока Подвал-->
 	</div>
-
-	<div class="popap ">
+	<!--Блок с попап-окнами-->
+	<div class="popap" id="createLocation">
 		<div class="popap-container">
 			<div class="popap-content">
 				<h3>Создать локацию</h3>
+				<input type="text">
+				<input type="text">
+				<input type="text">
+				<button class="create">Создать</button>
+				<button class="close">Отменить</button>
+			</div>
+		</div>
+	</div>
+	<div class="popap" id="editLocation">
+		<div class="popap-container">
+			<div class="popap-content">
+				<h3>Редактировать локацию</h3>
 				<input type="text">
 				<input type="text">
 				<input type="text">
