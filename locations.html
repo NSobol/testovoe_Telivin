@@ -27,7 +27,7 @@
 		<!--Конец блока Шапка-->
 
 		<!--Блок Основной контент-->
-		<main class="main">
+		<div class="main">
 			<aside class="aside">
 				<ul class="aside-menu-list">
 					<li class="aside-menu-list-item">
@@ -55,13 +55,13 @@
 						</a>
 					</li>
 					<li class="aside-menu-list-item">
-						<a href="#" class="aside-menu-list-link">
+						<a href="./locations.html" class="aside-menu-list-link">
 							<img src="./images/location.svg" alt="Локации" class="aside-menu-list-item-img">
 							<p class="aside-menu-list-item-text">Локации</p>
 						</a>
 					</li>
 					<li class="aside-menu-list-item">
-						<a href="#" class="aside-menu-list-link">
+						<a href="./settings.html" class="aside-menu-list-link">
 							<img src="./images/gear_wheel_orange.svg" alt="Настройки" class="aside-menu-list-item-img">
 							<p class="aside-menu-list-item-text">Настройки</p>
 						</a>
@@ -69,12 +69,15 @@
 				</ul>
 
 				<div class="aside-close-memu">
-					<img src="./images/arrow.svg" alt="Стрелка" >
+					<img src="./images/arrow.svg" alt="Стрелка">
 					<p class="aside-close-memu-text">Скрыть меню</p>
 				</div>
 			</aside>
-
-		</main>
+			<main class="page-content">
+				<h1 class="title">Локации / Все локации</h1>
+				<button class="create-popap">Создать локацию</button>
+			</main>
+		</div>
 		<!--Конец блока Основной контент-->
 
 		<!--Блок Подвал-->
@@ -89,6 +92,19 @@
 			</div>
 		</footer>
 		<!--Конец блока Подвал-->
+	</div>
+
+	<div class="popap ">
+		<div class="popap-container">
+			<div class="popap-content">
+				<h3>Создать локацию</h3>
+				<input type="text">
+				<input type="text">
+				<input type="text">
+				<button class="create">Создать</button>
+				<button class="close">Отменить</button>
+			</div>
+		</div>
 	</div>
 	<script src="./js/app.js" defer></script>
 </body>
