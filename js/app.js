@@ -4,7 +4,7 @@ const popapEditLocation = document.querySelector('#editLocation');
 
 const createLocate = document.querySelector('.create-popap');
 const editLocate = document.querySelectorAll('.edit-popap');
-const delLocate = document.querySelectorAll('.edit-popap');
+const delLocate = document.querySelectorAll('.delete');
 
 const btnClose = popapCreateLocation.querySelector('.close');
 const btnCreate = popapCreateLocation.querySelector('.create');
