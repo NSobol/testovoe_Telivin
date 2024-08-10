@@ -237,32 +237,35 @@
 		<div class="popap-container">
 			<div class="popap-content">
 				<h3>Создать локацию</h3>
-				<input type="text" placeholder="Название" class="name">
-				<input type="text" placeholder="Штрихкод" class="name">
-				<input type="text" placeholder="RFID" class="name">
-				<select name="" id="" class="popap-select">
-					<option selected>Вложенность</option>
-				</select>
-				<div class="checkbox-popap-group">
-					<span class="checkbox-text">Виртуальная локация</span>
-					<label class="checkbox-popap">
-						<input type="checkbox" checked>
-						<span class="checkbox-popap-switch"></span>
-					</label>
-				</div>
+				<form action="" method="post">
+					<input type="text" placeholder="Название" class="name">
+					<input type="text" placeholder="Штрихкод" class="name">
+					<input type="text" placeholder="RFID" class="name">
+					<select name="" id="" class="popap-select">
+						<option selected>Вложенность</option>
+					</select>
+					<div class="checkbox-popap-group">
+						<span class="checkbox-text">Виртуальная локация</span>
+						<label class="checkbox-popap">
+							<input type="checkbox" checked>
+							<span class="checkbox-popap-switch"></span>
+						</label>
+					</div>
 
-				<div class="checkbox-popap-group">
-					<span class="checkbox-text">Локация для утерь</span>
-					<label class="checkbox-popap">
-						<input type="checkbox" checked>
-						<span class="checkbox-popap-switch"></span>
-					</label>
-				</div>
-				<div class="popap-btns">
-					<button class="popap-btn-save"><img src="./images/save.svg" alt="Создать"
-							class="footer-btn-save-img"><span class="footer-btn-save-text">Создать</span></button>
-					<button class="close popap-btn-cancel"><span class="footer-btn-cancel-text">Отменить</span></button>
-				</div>
+					<div class="checkbox-popap-group">
+						<span class="checkbox-text">Локация для утерь</span>
+						<label class="checkbox-popap">
+							<input type="checkbox" checked>
+							<span class="checkbox-popap-switch"></span>
+						</label>
+					</div>
+					<div class="popap-btns">
+						<button type='submit' class="popap-btn-save create"><img src="./images/save.svg" alt="Создать"
+								class="footer-btn-save-img"><span class="footer-btn-save-text">Создать</span></button>
+						<button type="reset" class="close popap-btn-cancel"><span
+								class="footer-btn-cancel-text">Отменить</span></button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -270,39 +273,43 @@
 		<div class="popap-container">
 			<div class="popap-content">
 				<h3>Изменить локацию %название%</h3>
-				<label for="" class="popap-content-label">Название</label>
-				<input type="text" value="Локация 11" class="name name2">
-				<label for="" class="popap-content-label">Штрихкод</label>
-				<input type="text" value="1123123123123" class="name name2">
-				<label for="" class="popap-content-label">RFID</label>
-				<input type="text" value="1123123123123" class="name name2">
-				<label for="" class="popap-content-label">Вложенность</label>
-				<select name="" id="" class="popap-select popap-select-two">
-					<option value="Локация1" selected>Локация1</option>
-				</select>
-				<div class="checkbox-popap-group">
-					<span class="checkbox-text">Виртуальная локация</span>
-					<label class="checkbox-popap">
-						<input type="checkbox" checked>
-						<span class="checkbox-popap-switch"></span>
-					</label>
-				</div>
+				<form action="" method="post">
+					<label for="" class="popap-content-label">Название</label>
+					<input type="text" value="Локация 11" class="name name2">
+					<label for="" class="popap-content-label">Штрихкод</label>
+					<input type="text" value="1123123123123" class="name name2">
+					<label for="" class="popap-content-label">RFID</label>
+					<input type="text" value="1123123123123" class="name name2">
+					<label for="" class="popap-content-label">Вложенность</label>
+					<select name="" id="" class="popap-select popap-select-two">
+						<option value="Локация1" selected>Локация1</option>
+					</select>
+					<div class="checkbox-popap-group">
+						<span class="checkbox-text">Виртуальная локация</span>
+						<label class="checkbox-popap">
+							<input type="checkbox" checked>
+							<span class="checkbox-popap-switch"></span>
+						</label>
+					</div>
 
-				<div class="checkbox-popap-group">
-					<span class="checkbox-text">Локация для утерь</span>
-					<label class="checkbox-popap">
-						<input type="checkbox" checked>
-						<span class="checkbox-popap-switch"></span>
-					</label>
-				</div>
-				<div class="popap-btns">
-					<button class="popap-btn-delete"><img src="./images/delete.svg" alt="Удалить"
-							class="popap-btn-delete-img"><span class="footer-btn-cancel-text">Удалить</span></button>
-					<button class="close popap-btn-cancel"><span class="footer-btn-cancel-text">Отменить</span></button>
-				</div>
+					<div class="checkbox-popap-group">
+						<span class="checkbox-text">Локация для утерь</span>
+						<label class="checkbox-popap">
+							<input type="checkbox" checked>
+							<span class="checkbox-popap-switch"></span>
+						</label>
+					</div>
+					<div class="popap-btns">
+						<button class="popap-btn-delete delete"><img src="./images/delete.svg" alt="Удалить"
+								class="popap-btn-delete-img"><span
+								class="footer-btn-cancel-text">Удалить</span></button>
+						<button type="reset" class="close popap-btn-cancel"><span
+								class="footer-btn-cancel-text">Отменить</span></button>
+					</div>
 
-				<button class="popap-btn-save save"><img src="./images/save.svg" alt="Сохранить"
-						class="footer-btn-save-img"><span class="footer-btn-save-text">Сохранить</span></button>
+					<button type="submit" class="popap-btn-save save"><img src="./images/save.svg" alt="Сохранить"
+							class="footer-btn-save-img"><span class="footer-btn-save-text">Сохранить</span></button>
+				</form>
 			</div>
 		</div>
 	</div>
